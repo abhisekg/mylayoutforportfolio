@@ -1,0 +1,67 @@
+<!--Abhishek goyal portfolio coded in html css and boostrap little-bit of jQery-->
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+   
+    <title>pemplate for portfolio.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+<body data-spy="scoll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top">
+   <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menubar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+           <a class="navbar-brand" style="color:chartreuse;font-size:35px;">Coder_Goyal</a>
+       </div> 
+       <div class="collapse navbar-collapse" id="menubar">
+        <ul class="nav navbar-nav navbar-right">
+         <li><a href="#home"  style="color:chartreuse;font-size:25px;">Home</a></li>   
+         <li><a href="#about" style="color:chartreuse;font-size:25px;">About</a></li> 
+        <li><a href="#contact" style="color:chartreuse;font-size:25px;">Contact</a></li> 
+        </ul>
+       </div>
+    </div>
+
+    </nav>
+    <div class="master imageone"></div>
+    <div id="home">
+    </div>
+    <div class="master imagetwo"></div>
+    <div id="about">
+    </div>
+    <div class="master imagethree" ></div>
+    <div id="contact">
+        <p class="text-center" style="font-size:50px;font-family:chiller
+                                      ;color:aquamarine;" >You can easily get in touch with me.</p>
+        <div class="row">
+        <div class="col-xs-8 fa fa-facebook-official" style="color:white;font-size:50px;"></div>
+        
+        </div>
+   </div>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script>
+   $(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	   e.preventDefault();
+
+   var target = this.hash;
+ var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+}); 
+  </script> 
+</body>
+</html>
